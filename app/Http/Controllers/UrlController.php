@@ -56,6 +56,7 @@ class UrlController extends Controller
         ]);
 
         return response()->json(['short_url_hash' => url($url->short_url_hash)]);
+
     }
 
 
@@ -65,6 +66,11 @@ class UrlController extends Controller
         $result = $safeBrowsing->isSafeUrl($url, true);
         return $result;
 
+    }
+
+    public function redirectHash($hash){
+        $redirectUrl = Url::where('short_url_hash', $hash)->first();
+        return redirect($redirectUrl->url);
     }
 
 }
