@@ -4,8 +4,85 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "572dfaf3e601286b0d69dbb172273185",
+    "content-hash": "0ac28cc41031f734eb0593bdcde6e240",
     "packages": [
+        {
+            "name": "ariaieboy/laravel-safe-browsing",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ariaieboy/laravel-safe-browsing.git",
+                "reference": "6894416ea0a0a97746f63c2cdbdbb0789cc360c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ariaieboy/laravel-safe-browsing/zipball/6894416ea0a0a97746f63c2cdbdbb0789cc360c5",
+                "reference": "6894416ea0a0a97746f63c2cdbdbb0789cc360c5",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.5",
+                "illuminate/contracts": "^9.30|^10.0|^11",
+                "php": "~8.1.0|~8.2.0|~8.3",
+                "spatie/laravel-package-tools": "^1.13.5"
+            },
+            "require-dev": {
+                "graham-campbell/testbench": "^5.7|^6.0",
+                "nunomaduro/larastan": "^1.0|^2.5",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.2",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.5|^10.0.16"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Ariaieboy\\LaravelSafeBrowsing\\LaravelSafeBrowsingServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelSafeBrowsing": "Ariaieboy\\LaravelSafeBrowsing\\Facades\\LaravelSafeBrowsing"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ariaieboy\\LaravelSafeBrowsing\\": "src",
+                    "Ariaieboy\\LaravelSafeBrowsing\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "AriaieBOY",
+                    "email": "ariaieboy.ir@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Google Safe Browsing API Integration for LARAVEL",
+            "homepage": "https://github.com/ariaieboy/laravel-safe-browsing",
+            "keywords": [
+                "ariaieboy",
+                "laravel",
+                "laravel-safe-browsing"
+            ],
+            "support": {
+                "issues": "https://github.com/ariaieboy/laravel-safe-browsing/issues",
+                "source": "https://github.com/ariaieboy/laravel-safe-browsing/tree/1.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/ariaieboy",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-01T20:36:35+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.1",
@@ -3170,6 +3247,66 @@
                 }
             ],
             "time": "2024-04-27T21:32:50+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.16.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
+                "reference": "ddf678e78d7f8b17e5cdd99c0c3413a4a6592e53",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0|^11.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.16.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-20T07:29:11+00:00"
         },
         {
             "name": "symfony/clock",

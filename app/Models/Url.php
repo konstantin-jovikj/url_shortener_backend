@@ -10,7 +10,7 @@ class Url extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user_url',
+        'url',
         'short_url_hash',
     ];
 
