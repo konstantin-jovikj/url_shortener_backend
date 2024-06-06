@@ -19,7 +19,9 @@ class UrlController extends Controller
 
         $checkedUrl = Url::where('user_url', $request->user_url)->first();
         if ($checkedUrl) {
-            return response()->json(['url_hash' => url($checkedUrl->short_url_hash)]);
+            return response()->json([
+                'message' => 'URL already exists',
+                'url_hash' => url($checkedUrl->short_url_hash)]);
         }
 
         //Generate unique Hash
