@@ -27,7 +27,7 @@ class UrlController extends Controller
         if ($checkedUrl) {
             return response()->json([
                 'message' => 'URL already exists',
-                'url_hash' => url($checkedUrl->short_url_hash)
+                'short_url_hash' => url($checkedUrl->short_url_hash)
             ]);
         }
 
