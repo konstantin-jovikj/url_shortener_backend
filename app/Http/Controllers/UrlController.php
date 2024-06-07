@@ -13,7 +13,7 @@ use Ariaieboy\LaravelSafeBrowsing\LaravelSafeBrowsing;
 class UrlController extends Controller
 {
 
-    public $client;
+    // public $client;
     public function generateHashUrl(Request $request)
     {
 
@@ -70,9 +70,5 @@ class UrlController extends Controller
 
     }
 
-    // public function redirectHash($hash){
-    //     $redirectUrl = Url::where('short_url_hash', $hash)->first();
-    //     return redirect($redirectUrl->url);
-    // }
 
 }

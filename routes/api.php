@@ -9,5 +9,5 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-// Route
+// Routes
 Route::post('/generate_hash', [UrlController::class,'generateHashUrl'])->name('generate.hash');
