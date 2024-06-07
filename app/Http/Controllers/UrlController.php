@@ -55,7 +55,9 @@ class UrlController extends Controller
             'short_url_hash' => $hash,
         ]);
 
-        return response()->json(['short_url_hash' => url($url->short_url_hash)]);
+        return response()->json([
+            'short_url_hash' => url($url->short_url_hash)
+        ]);
 
     }
 
@@ -68,9 +70,9 @@ class UrlController extends Controller
 
     }
 
-    public function redirectHash($hash){
-        $redirectUrl = Url::where('short_url_hash', $hash)->first();
-        return redirect($redirectUrl->url);
-    }
+    // public function redirectHash($hash){
+    //     $redirectUrl = Url::where('short_url_hash', $hash)->first();
+    //     return redirect($redirectUrl->url);
+    // }
 
 }
